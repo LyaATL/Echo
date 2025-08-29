@@ -1,25 +1,37 @@
 # Echo
-Echo is a service providing the following:
-- Echo Mesh: A plugin for the game FFXIV leveraging Dalamud's framework to allow people to sync their mods towards other connected clients. Mesh has the power to simultaneously connect to multiple service instances at once. Effectively replacing something known as "sync shells".
-- Echo Service: A cloud-native Go application that acts as a broker/server for mesh to connect too.
-- Echo Sledgehammer: A centralized service that synchronizes heavy offenders. This service allows `Echo Service` instances to sync global client bans and file bans.
+Echo is a service that provides the following components:
+- **Echo Mesh**: A plugin for the game *Final Fantasy XIV* leveraging Dalamud's framework to allow users to synchronize their mods with other connected clients. Mesh can simultaneously connect to multiple service instances, effectively replacing what is known as "shells."
+- **Echo Service**: A cloud-native Go application that acts as a broker/server for Mesh to connect to.
+- **Echo Sledgehammer**: A centralized service that synchronizes major offenders. This service enables `Echo Service` instances to share global client bans and file bans.
 
 ## Roadmap
 
-These are either planned ideas or rough ideas.
+These are either planned features or conceptual ideas.
+
 ### Echo Mesh
-- [ ] Add support to implement a plugin native 'shell-guard'.
-  - Ensure collections are correctly setup, removing crashes due to poor setups. Either by checking the attempted sync on faults or utilizing hooks to 'fix' crashes before they happen, reacting upon this bad sync towards the service.
+- [ ] Add support for implementing a plugin-native "shell-guard."
+  - Ensure collections are correctly set up to prevent crashes caused by improper configurations. This may involve checking attempted syncs for faults or using hooks to resolve issues before they occur, while notifying the service of invalid sync attempts.
 
 ### Echo Service
-- [ ] Add support to opt-in instead of syncing everything. It's still the responsibility of the host to make sure the ban is valid.
-  - Pedophilia is and always will be a global ban. This will currently be the only exception.
-- [ ] Add support to implement a central 'shell-guard'.
-  - Ensure collections are correctly setup, removing crashes due to poor setups.
+- [ ] Add support for opting in, instead of syncing everything by default. It remains the host's responsibility to ensure that a ban is valid.
+  - Pedophilia is, and always will be, subject to a global ban. This is currently the only exception.
+- [ ] Add support for implementing a central "shell-guard."
+  - Ensure collections are correctly set up to prevent crashes caused by improper configurations.
 
 ### Echo Sledgehammer
-- [ ] Add support to opt-in instead of syncing everything. It's still the responsibility of the host to make sure the ban is valid.
-  - Pedophilia is and always will be a global ban. This will currently be the only exception.
-- [ ] Add support for appeals
-- [ ] Add a panel to manage bans for moderators/administrators
-- [ ] Add support for custom ban reasons
+- [ ] Add support for opting in, instead of syncing everything by default. It remains the host's responsibility to ensure that a ban is valid.
+  - Pedophilia is, and always will be, subject to a global ban. This is currently the only exception.
+- [ ] Add support for appeals.
+- [ ] Add an administration panel to allow moderators/administrators to manage bans.
+- [ ] Add support for custom ban reasons.
+
+## Disclaimer
+
+This project, **Echo Mesh**, **Echo Service**, **Echo Sledgehammer**, is an independent work and has **no affiliation, connection, or association with Mare Synchronos** or its developers.  
+It does not use, depend on, or share any code or intellectual property from Mare Synchronos.
+
+Echo Service is intended as a standalone learning and development project.  
+Any resemblance in functionality or naming is purely coincidental and not indicative of any partnership, endorsement, or continuation of Mare Synchronos.
+
+This software is provided **"as is"**, without a warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.  
+Use of this software is at your own discretion and risk.
