@@ -17,6 +17,10 @@ These are either planned features or conceptual ideas.
   - Pedophilia is, and always will be, subject to a global ban. This is currently the only exception.
 - [ ] Add support for implementing a central "shell-guard."
   - Ensure collections are correctly set up to prevent crashes caused by improper configurations.
+- [ ] Provide service administrators a panel to manage their instance.
+  - Bans, unbans, statistics, file management.
+- [ ] Implement Write-Once-Read-Many (WORM) for it's filesystem regarding files.
+    - Add 'rolling' support to overwrite old/no usage files when space is limited.
 
 ### Echo Sledgehammer
 - [ ] Add support for opting in, instead of syncing everything by default. It remains the host's responsibility to ensure that a ban is valid.
