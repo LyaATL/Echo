@@ -19,7 +19,7 @@ These are either planned features or conceptual ideas.
   - Ensure collections are correctly set up to prevent crashes caused by improper configurations.
 - [ ] Provide service administrators a panel to manage their instance.
   - Bans, unbans, statistics, file management.
-- [ ] Implement Write-Once-Read-Many (WORM) for it's filesystem regarding files.
+- [ ] Implement Write-Once-Read-Many (WORM) for it's filesystem.
     - Add 'rolling' support to overwrite old/no usage files when space is limited.
 
 ### Echo Sledgehammer
