@@ -9,6 +9,18 @@ Echo is a service that provides the following components:
 These are either planned features or conceptual ideas.
 
 ### Echo Mesh
+#### To realize
+- [ ] Correctly implement Penumbra API to read current active texture, VFX, animation, ... replacements. Read file paths and sent over to broker.
+- [ ] Correctly implement Glamourer API to read current active clothing items to inform broker.
+- [ ] Correctly implement Customize+ API to read active customization to inform broker.
+- [ ] Correctly implement Moodles' API to read active (de)buffs and inform broker.
+- [ ] Correctly implement mesh/multi server connection support
+  - Run a 'runner' per active connection on a seperate thread.
+  - Said runner needs to be-able to interact with other active connections if certain players are appearing in multiple servers.
+  - Correctly apply textures etc on the main thread.
+  - Handle 'pausing' of synchronization from a certain player. Sync this pause over every active connection if appearing in another.
+
+#### Nice to have
 - [ ] Add support for implementing a plugin-native "shell-guard."
   - Ensure collections are correctly set up to prevent crashes caused by improper configurations. This may involve checking attempted syncs for faults or using hooks to resolve issues before they occur, while notifying the service of invalid sync attempts.
 
